@@ -1,0 +1,36 @@
+
+public class wrapperclass 
+
+{
+    public static void main(String args[])
+    {
+        int i=20;
+        Integer obj1=new Integer(i);        //converting primitive type to object no.
+        System.out.println(obj1);
+        
+        
+        
+        
+        i=obj1.intValue();                  //convert object no. to primitive type.
+        System.out.println(i);
+        
+        
+        
+        String str=Integer.toString(i);     //convert integer to string.
+        System.out.println(str);
+        
+        
+        
+        Integer s=Integer.valueOf(str);     //Convert string object to numeric object.
+        System.out.println(s);
+        
+        
+        
+        int a=Integer.parseInt(str);         //Convert object to primitive data type.
+        System.out.println(a);
+        
+        
+    }
+    
+    
+}
