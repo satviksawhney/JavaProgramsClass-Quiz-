@@ -1,0 +1,47 @@
+package Overriding;
+
+/**
+ *
+ * @author Student
+ */
+class Overriding {
+    
+    int x;
+    Overriding(int x)
+    {
+        this.x=x;
+    }
+    void display()
+    {
+        System.out.println("Display x:"+x);
+    }
+    
+}
+
+
+class sub extends Overriding
+{
+    int y; 
+    sub(int x, int y)
+    {
+        super(x);
+        this.y=y;
+    }
+    void display()
+    {
+        System.out.println(x);
+        System.out.println(y);
+    }
+}
+
+
+class Overriden
+{
+
+public static void main(String args[])
+{
+    sub obj1=new sub(100,200);
+    obj1.display();
+    
+}
+}
