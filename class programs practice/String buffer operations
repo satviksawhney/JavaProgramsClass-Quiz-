@@ -1,0 +1,29 @@
+package buff;
+
+public class Buff {
+
+    
+    public static void main(String[] args) {
+        
+        
+        StringBuffer s1= new StringBuffer("Satvik");
+        StringBuffer s2;
+        int a;
+        
+        
+        a=s1.length();
+        System.out.println(a);
+        
+        
+        a=s1.capacity();
+        System.out.println(a);
+        
+
+        s1.setLength(56);
+        System.out.println(s1);
+        
+        s1.setCharAt(3,'d');
+        System.out.println(s1);
+    }
+    
+}
