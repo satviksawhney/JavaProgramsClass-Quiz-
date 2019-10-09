@@ -19,10 +19,10 @@ public class Buff {
         System.out.println(a);
         
 
-        s1.setLength(56);
+        s1.setLength(56);         //return type is void
         System.out.println(s1);
         
-        s1.setCharAt(3,'d');
+        s1.setCharAt(3,'d');      //return type is void
         System.out.println(s1);
     }
     
