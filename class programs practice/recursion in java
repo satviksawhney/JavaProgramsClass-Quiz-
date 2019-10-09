@@ -1,0 +1,37 @@
+package impl;
+
+
+class Recur
+{
+    
+    int sumofincomes(int a)
+    {
+        
+        int s=0,i;
+        s=s+sumofincomes(a+1);
+        
+        for(i=0;i<10;i++)
+        return(s);
+        
+        
+    
+    }
+   
+    
+}
+
+
+class Impl 
+{
+    public static void main(String args[])
+    {
+        int a;
+        Recur s1=new Recur();
+        a=s1.sumofincomes(5);
+        System.out.println(a);
+    }
+    
+    
+}
+
+
