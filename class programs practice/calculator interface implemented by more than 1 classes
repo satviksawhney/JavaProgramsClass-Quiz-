@@ -1,0 +1,55 @@
+package impl;
+
+
+interface Calculator
+{
+   
+    void calculation();
+   
+}
+
+
+class Add implements Calculator
+{
+    
+    public void calculation()
+    {
+        int s,a=5,b=6;
+        s=a+b;
+        System.out.println(s);
+    }
+    
+}
+
+
+class Sub implements Calculator
+{
+    
+    public void calculation()
+    {
+        int s,a=5,b=6;
+        s=a-b;
+        System.out.println(s);
+    }
+    
+}
+
+
+class Impl 
+{
+    public static void main(String args[])
+    {
+        
+        Add s1=new Add();
+        Sub s2=new Sub();
+        
+        s1.calculation();
+        s2.calculation();
+        
+    }
+    
+    
+}
+
+
+
