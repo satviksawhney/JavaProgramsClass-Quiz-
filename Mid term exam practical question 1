@@ -1,0 +1,46 @@
+//QUESTION
+//Given start and end numbers, return a new array containing the sequence
+//of integers from start up to but not including end, so start=5 & end=10, yields {5,6,7,8,9} 
+//array. The end number is greater or equal to start. Length-0 array is valid.
+
+
+
+
+//ANSWER
+package main;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+
+        int end,start,i;
+        Scanner s1=new Scanner(System.in);
+        Fiz s2=new Fiz();
+        System.out.println("Enter the values of start and end.");
+        start=s1.nextInt();
+        end=s1.nextInt();
+        int[] arr2 = new int[end - start];
+        arr2=s2.fizzArray3(start,end);
+
+        for(i=0;i<end-start;i++)
+        {
+            System.out.println(arr2[i]);
+        }
+
+    }
+
+    }
+
+    class Fiz {
+        public int[] fizzArray3(int start, int end) {
+            int[] arr = new int[end - start];
+
+            for (int i = start; i < end; i++)
+                arr[i - start] = i;
+
+            return arr;
+        }
+    }
