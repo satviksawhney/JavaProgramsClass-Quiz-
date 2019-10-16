@@ -1,0 +1,46 @@
+
+//QUESTION
+//we will say that a "triple" in a string is a char appearing three times in a 
+//row. Return the number of triples in a given string. Triples may overlap.
+
+
+
+//ANSWER
+package triple;
+
+import java.util.*;
+
+class Findtriple
+{
+    public int countTriple(String str) 
+    {
+    int ctr = 0;
+    
+    for(int i = 0; i <= str.length()-3; i++) 
+    {
+        if(str.charAt(i) == str.charAt(i+1) && 
+            str.charAt(i) == str.charAt(i+2))
+            ctr++;
+    }
+                    
+    return ctr;
+    }
+}
+
+public class Triple {
+
+    public static void main(String[] args) 
+    
+    {
+      int Numberoftriples;
+      String k;
+      Findtriple s2=new Findtriple();
+      Scanner s1=new Scanner(System.in);
+      System.out.println("Enter String ");
+      k=s1.nextLine();
+      Numberoftriples=s2.countTriple(k);
+      System.out.println("Triples in string are " + Numberoftriples);
+    
+    }
+    
+}
